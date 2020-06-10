@@ -1,0 +1,173 @@
+/**Barra**/
+div.barra {
+	background-color: #353535;
+	padding: 2% 0;
+}
+
+div.logo {
+	width: 80%;
+	float: left;
+}
+
+div.logo img {
+	width: 25%;
+}
+
+@media only screen and (min-width: 768px) {
+	div.logo {
+		width: 30%;
+	}
+}
+
+/**Navegacion principal**/
+nav.navegacion-principal {
+	display: none;
+}
+
+nav.navegacion-principal a {
+	font-family: "Oswald", sans-serif;
+	color: #ffffff;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all 0.6s ease;
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+nav.navegacion-principal a:hover {
+	background-color: #fe4918;
+}
+
+nav.navegacion-principal a:last-child {
+	border: 1px solid #fe4918;
+	color: #fe4918;
+}
+
+nav.navegacion-principal a:last-child {
+	color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+	nav.navegacion-principal {
+		width: 70%;
+		float: right;
+		text-align: right;
+		display: block;
+	}
+	nav.navegacion-principal a {
+		margin-right: 10px;
+		padding: 6px 5px;
+		display: inline-block;
+		width: auto;
+		display: inline-block;
+		text-align: center;
+		margin: 20px 10px 0 0;
+	}
+}
+
+/*Globales contendedor nav principal*/
+.contenedor {
+	width: 98%;
+	margin: 0 auto;
+}
+/*Sirven para Serlo Responsivo osea se acople a cualquier dispositivo*/
+@media only screen and(min-width:480px) {
+	.contenedor {
+		width: 95%;
+	}
+}
+
+@media only screen and(min-width:768px) {
+	.contenedor {
+		width: 90%;
+	}
+}
+
+@media only screen and (min-width:992px ) {
+	.contenedor {
+		width: 90%;
+		max-width: 1100px;
+	}
+}
+
+.menu-fixed {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	width: 100%;
+	max-width: 100%;
+	box-shadow: 0px 4px 3px rgba(0, 0, 0, .4);
+}
+
+.slider{
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul{
+	display:flex;
+	padding: 0;
+	width: 300%;
+	
+	animation: cambio 20s infinite alternate;	
+	animation-timing-function: ease-in;
+}
+.slider li{
+	width:45%;
+	list-style: none;
+}
+.slider img{
+	width: 60%;
+}
+
+@keyframes cambio{
+	0% {margin-left:0;}
+	20% {margin-left:0;}
+	
+	25% {margin-left:-100%;}
+	45% {margin-left:-100%;}
+	
+	50% {margin-left:-200%;}
+	70% {margin-left:-200%;}
+		
+}
+#footer{
+	background-color:#212121;
+	position:fixed;
+	width:100%;
+	height:70px;
+	bottom:0;
+	left:0;
+	z-index: 100000;
+}
+
+#footer h2{
+	font-size:20px;
+	font-weight:normal;
+	left:50%;
+	margin-left:-400px;
+	padding:22px 0;
+	position:absolute;
+	width:400px;
+	color:#eee;
+}
+
+
+#footer a.tzine,a.tzine:visited{
+	background:url("../img/tzine.png") no-repeat right top;
+	border:none;
+	text-decoration:none;
+	color:#FCFCFC;
+	font-size:12px;
+	height:70px;
+	left:50%;
+	line-height:31px;
+	margin:23px 0 0 110px;
+	position:absolute;
+	top:0;
+	width:290px;
+}
