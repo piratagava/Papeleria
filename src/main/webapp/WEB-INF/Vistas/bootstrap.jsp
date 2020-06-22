@@ -1,5 +1,6 @@
 <!-- Referring to JS file va primero para funcionar con jquery de bootstrap-->
-<script src="js/jquery-1.11.1.min.js"></script>
+<!-- <script src="js/jquery-1.11.1.min.js"></script>  -->
+<script src="js/jquery-3.4.1.min.js"></script>
 
 <!-- Referring to Css -->
 <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
